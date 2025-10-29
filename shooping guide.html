@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Diecast Bapak Akbar</title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #ffcc00;
+  background: linear-gradient(to bottom, #111, #444, #999);
+  background-image: url('IMG/background-diecast.jpg'); /* bisa ganti dengan gambar mobil diecast kamu */
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+
+/* ===== Tulisan Bergerak & Berkilau ===== */
+.marquee {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 16px 0;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 2px solid #ff0000;
+  border-bottom: 2px solid #ff0000;
+  box-shadow: 0 0 15px rgba(255,0,0,0.6);
+}
+
+.marquee span {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff0000;
+  text-shadow: 0 0 8px #ff3333;
+  animation: moveText 12s linear infinite, glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes moveText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 10px #ff0000; }
+  50% { text-shadow: 0 0 25px #ff4d4d; }
+  100% { text-shadow: 0 0 10px #ff0000; }
+}
+
+/* ===== Judul Utama ===== */
+.title {
+  font-size: 48px;
+  text-align: center;
+  color: #fff;
+  margin: 30px 0 10px 0;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px #ff0000, 0 0 40px #ff3333;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% { text-shadow: 0 0 10px #ff0000; }
+  50% { text-shadow: 0 0 30px #ff4444; }
+  100% { text-shadow: 0 0 10px #ff0000; }
+}
+
+/* ===== Navigasi ===== */
+.navbar {
+  width: 900px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 0, 0.85);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 0 10px #000;
+}
+
+.navbar a {
+  color: #000;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: white;
+  background-color: #ff0000;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff0000, 0 0 30px #ff3333;
+}
+
+/* ===== Gambar Header ===== */
+.header-img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* ===== Gambar Produk ===== */
+.products {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.product-card {
+  display: inline-block;
+  margin: 10px;
+  background: rgba(0,0,0,0.8);
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff0000;
+}
+
+.product-card img {
+  border-radius: 10px;
+  width: 250px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card p {
+  color: #ffcc00;
+  margin-top: 10px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* ===== Bagian Tata Cara ===== */
+h2 {
+  color: #ffffff;
+  text-shadow: 0 0 8px #ff0000;
+  text-align: center;
+  margin-top: 50px;
+}
+
+ol {
+  width: 70%;
+  margin: 20px auto;
+  color: #eeeeee;
+  font-size: 16px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255,0,0,0.2);
+}
+
+li p, li {
+  color: #ffdd99;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Tulisan Bergerak -->
+<div class="marquee">
+  <span>??? Selamat Datang di Toko Diecast Bapak Akbar — Koleksi Mobil Miniatur Premium! ????</span>
+</div>
+
+<!-- Judul -->
+<div class="title">Diecast Bapak Akbar</div>
+
+<!-- Navigasi -->
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="#">Shopping Guide</a>
+  <a href="catalog.html">Catalog</a>
+  <a href="profil.html">Profil</a></div>
+
+<!-- Gambar Header -->
+<img src="IMG/kokkokokokokokokokokok.png" width="527" height="148" class="header-img" alt="Header"/>
+
+<!-- Produk -->
+<div class="products">
+  <div class="product-card">
+    <img src="IMG/poooooooooooooooooooooooooooooooooooooooooo.png" alt="Diecast 1">
+    <p>NISSAN GTR R34</p>
+  </div>
+  <div class="product-card">
+    <img src="IMG/ppp.png" alt="Diecast 2">
+    <p>NISSAN GTR R33</p>
+  </div>
+</div>
+
+<!-- Tata Cara Belanja -->
+<h2>?? Tata Cara Belanja Online</h2>
+<ol>
+  <li><strong>Menentukan Kebutuhan</strong>
+    <ul>
+      <li>Tentukan barang yang ingin dibeli.</li>
+      <li>Sesuaikan dengan kebutuhan dan anggaran.</li>
+    </ul>
+  </li>
+  <li><strong>Mencari Toko/Platform</strong>
+    <ul>
+      <li>Pilih platform terpercaya seperti Shopee, Tokopedia, Lazada, atau website resmi.</li>
+      <li>Periksa reputasi toko dan ulasan pembeli.</li>
+    </ul>
+  </li>
+  <li><strong>Memilih Produk</strong>
+    <ul>
+      <li>Baca deskripsi produk dengan teliti.</li>
+      <li>Bandingkan harga dan kualitas antar toko.</li>
+    </ul>
+  </li>
+  <li><strong>Melakukan Pembayaran</strong>
+    <ul>
+      <li>Lakukan pembayaran sesuai instruksi dan simpan bukti transaksi.</li>
+    </ul>
+  </li>
+  <li><strong>Menerima Barang</strong>
+    <ul>
+      <li>Pastikan barang sesuai pesanan dan beri ulasan jika puas.</li>
+    </ul>
+  </li>
+</ol>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Diecast Bapak Akbar</title>
+
+<style type="text/css">
+/* ====== Global ====== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background-color: #2e2e2e; /* Abu-abu Kaido House */
+  color: #fff;
+}
+
+/* ====== Judul ====== */
+h1 {
+  text-align: center;
+  font-size: 42px;
+  color: #ffffff;
+  margin-top: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  border-bottom: 3px solid #c40000;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+
+/* ====== Banner Tulisan Bergerak ====== */
+.welcome-wrap {
+  max-width: 1000px;
+  margin: 18px auto 0;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(196,0,0,0.08), rgba(0,0,0,0.25));
+  border-radius: 8px;
+  border: 1px solid rgba(196,0,0,0.12);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.welcome {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 14px 10px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  text-transform: none;
+  letter-spacing: 1px;
+  /* merah Ferrari glow */
+  text-shadow: 0 0 8px rgba(196,0,0,0.6);
+  animation: slide-left 12s linear infinite;
+}
+
+/* Jika user menonaktifkan animasi (aksesibilitas) */
+@media (prefers-reduced-motion: reduce) {
+  .welcome { animation: none; }
+}
+
+/* animasi bergerak dari kanan ke kiri */
+@keyframes slide-left {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* ====== Menu Navigasi ====== */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #3a3a3a;
+  border-top: 2px solid #c40000;
+  border-bottom: 2px solid #c40000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  margin-top: 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f0f0f0;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+  transition: all 0.25s ease;
+}
+
+nav a:hover {
+  background-color: #c40000; /* Highlight merah Ferrari */
+  color: #fff;
+  border-radius: 6px;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #c40000;
+}
+
+/* ====== Container Produk ====== */
+.container {
+  max-width: 1000px;
+  margin: 30px auto 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* ====== Kotak Produk ====== */
+.product {
+  background-color: #444;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  width: 220px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.product:hover {
+  transform: translateY(-8px);
+  border: 2px solid #c40000; /* Highlight merah saat pointer menyentuh */
+  box-shadow: 0 0 15px #c40000;
+}
+
+.product img {
+  width: 150px;
+  height: 218px;
+  object-fit: cover;
+  margin-top: 15px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.product img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #c40000;
+}
+
+.price {
+  font-size: 16px;
+  color: #ffcc00;
+  font-weight: bold;
+  margin: 12px 0 18px 0;
+  text-shadow: 1px 1px 2px #000;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Diecast Bapak Akbar</h1>
+
+<!-- Banner tulisan bergerak -->
+<div class="welcome-wrap" aria-hidden="false">
+  <div class="welcome" role="status" aria-live="polite">
+    Selamat datang di Toko Diecast Bapak Akbar — Koleksi premium, kualitas jempolan!
+  </div>
+</div>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="shooping guide.html">Shopping Guide</a>
+  <a href="catalog.html">Catalog</a>
+  <a href="profil.html">Profil</a></nav>
+
+<div class="container">
+  <div class="product">
+    <img src="IMG/alakbar.jpeg" alt="Diecast 1" />
+    <p class="price">350,000 Rp</p>
+  </div>
+
+  <div class="product">
+    <img src="IMG/nurul.jpeg" alt="Diecast 2" />
+    <p class="price">400,000 Rp</p>
+
+  </div>
+
+  <div class="product">
+    <img src="IMG/ppppppppppppppppppppppppppppppp.jpeg" alt="Diecast 3" />
+    <p class="price">600,000 Rp</p>
+  </div>
+
+  <div class="product">
+    <img src="IMG/akb2153.jpeg" alt="Diecast 4" />
+    <p class="price">400,000 Rp</p>
+  </div>
+
+  <div class="product">
+    <img src="IMG/eki.jpeg" alt="Diecast 5" />
+    <p class="price">1,000,000 Rp</p>
+  </div>
+
+  <div class="product">
+    <img src="IMG/opa.jpeg" alt="Diecast 6" />
+    <p class="price">1,500,000 Rp</p>
+  </div>
+
+  <div class="product">
+    <img src="IMG/akbar 65252.jpeg" alt="Diecast 7" />
+    <p class="price">900,000 Rp</p>
+  </div>
+
+  <div class="product">
+    <img src="IMG/akbar.jpeg" alt="Diecast 8" />
+    <p class="price">500,000 Rp</p>
+  </div>
+</div>
+
+</body>
+</html>
